@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body ng-app="myApp">
+  <h1>Webpack example</h1>
+  <div class="myApp">
+    <p ng-ctrl="MyCtrl">
+      あのイーハトーヴォの<br/>
+      すきとおった風、<br/>
+    </p>
+    <p>
+      <br/>
+    </p>
+    <p>
+      夏でも底に冷たさをもつ青いそら、<br/>
+      うつくしい森で飾られたモリーオ市、<br/>
+      郊外のぎらぎらひかる草の波。
+    </p>
+  </div>
+  <script src="/static/bundle.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    setTimeout(function() {
+        var docScope = angular.element(document).find('body').injector()
+        debugger
+
+        angular.element(document).find('body').injector().invoke([
+                '$rootScope',
+                '$timeout',
+                'MyService',
+                function($rootScope, $timeout, MyService)  {
+                    debugger
+                }
+        ]);
+    }, 1000)
+
+  </script>
+</body>
+</html>

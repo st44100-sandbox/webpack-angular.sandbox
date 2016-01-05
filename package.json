@@ -1,0 +1,21 @@
+{
+  "name": "webpack-angular-sandbox",
+  "version": "0.0.0",
+  "description": "Webpack + Angulr sandbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --content-base public"
+  },
+  "author": "",
+  "license": "WTFPL",
+  "devDependencies": {
+    "exports-loader": "^0.6.2",
+    "imports-loader": "^0.6.5",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.8"
+  }
+}
